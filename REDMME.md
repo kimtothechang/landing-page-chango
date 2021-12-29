@@ -15,5 +15,5 @@
 ## FrontEnd
 
 - HTML
-- CSS & SCSS
+- CSS
 - Javascript
