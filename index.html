@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Chango</title>
   </head>
   <body>
     <!-- 오른쪽 모달 메뉴바 && 구독 이메일 추가하기 -->
     <!-- 헤더 시작 -->
-    <header>
-      <h1>chango</h1>
-      <nav>
-        <object data="" type="image/svg+xml" aria-label="go back"></object>
-        <ul>
+    <header class="header">
+      <h1>
+        <img src="./img/logo_chango.png" alt="" />
+      </h1>
+      <button type="button" class="menu-btn">
+        <object
+          data="./svg/menu.svg"
+          type="image/svg+xml"
+          aria-label="menu"
+        ></object>
+      </button>
+      <nav class="header-nav">
+        <object
+          data="./svg/arrow.svg"
+          type="image/svg+xml"
+          aria-label="go back"
+        ></object>
+        <ul class="header-nav-ul">
           <li>Home</li>
           <li>About</li>
           <li>Support</li>
@@ -26,64 +37,132 @@
     </header>
     <!-- 헤더 끝 -->
     <!-- 메인 시작 -->
-    <main>
+
+    <main class="main">
       <h2 class="sr_only"></h2>
-      <section>
+      <section class="main-header">
         <h2>Welcome to Chango Posts</h2>
-      </section>
-      <section>
-        <div>
-          <p>This web is for someone interested in Chango</p>
+        <div class="main-header-info">
           <p>
             We provides information like basic things, instagram and youtube
             address, how to support Chango and how to get some Chango goods
           </p>
-          <a href="">Download</a>
+          <a href="./img/logo_chango.png" download>Download</a>
         </div>
-        <img src="" alt="" />
+        <img class="main-header-img" src="./img/main_icon.png" alt="" />
       </section>
-      <section>
-        <article>
-          <img src="" alt="" />
+      <section class="main-posts">
+        <article class="rep-post">
+          <img src="./img/lotteryInTexas.JPEG" alt="" />
           <h3>Chango in Texas</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <p>
+            I bought a lottery for fun. Surprisingly, I won the lottery . So,
+            I'm going to t he mart by bus wearing the pancho that my Mexican
+            friend gave me.
+          </p>
         </article>
-        <article>
+        <article class="sub-post">
           <h3>Chango in Army</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-            doloremque excepturi porro consequatur in incidunt culpa voluptatem
-            perspiciatis iste accusantium.
+            When I was platoon and compnay leader in <span>army</span>, there
+            were a lot of stories. Sometimes I was angry, Sometimes I was upset
+            and sometimes I was happy, fun, funny... I was discharged from
+            military 1 years ago, I still miss my platoon members and company
+            members. I should make time to meet them often.
           </p>
-          <div>
-            <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+          <div class="sub-img-wrapper">
+            <img src="./img/wintertarining.JPG" alt="" />
+            <img src="./img/snowman.JPEG" alt="" />
+            <img src="./img/lastMeal.JPEG" alt="" />
           </div>
-          <p></p>
-          <a href=""></a>
+          <p>
+            First picture is when we get the winter training <br />There was
+            super cold but we did it<br />
+            Second picture is when we cleaned up the snow <br />
+            We describe it as trash falling from the sky.<br />
+            And Last picture is when I had my last meal<br />with my members as
+            a platoon leader.
+          </p>
+          <a href="#none">Learn More</a>
+        </article>
+      </section>
+      <section class="last-posts">
+        <article class="subs">
+          <h3>Subscribe to our Blog post</h3>
+          <p>
+            Thanks to visit my site if you want to get information about my new
+            posts, enter your e-mail address and subscribe, then you'll get it.
+            Have a nice day.
+          </p>
+          <form action="" class="email-form">
+            <input
+              class="email"
+              type="email"
+              placeholder="Enter your e-mail address"
+            />
+            <button type="button" class="btn-subs">Subscribe</button>
+          </form>
+        </article>
+        <article class="last-img">
+          <img src="./img/4changosoldier.JPG" alt="" />
         </article>
       </section>
     </main>
     <!-- 메인 끝 -->
     <!-- 푸터 시작 -->
-    <footer>
-      <section>
-        <h2>Chango</h2>
+    <footer class="footer">
+      <section class="footer-link">
+        <h2><img src="./img/logo_chango.png" alt="" /></h2>
         <ul>
-          <li>blog</li>
-          <li>instagram</li>
-          <li>facebook</li>
-          <li>youtube</li>
+          <li>
+            <a href="">
+              <img src="./svg/link/blog.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./svg/link/insta.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./svg/link/facebook.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./svg/link/youtube.svg" alt="" />
+            </a>
+          </li>
         </ul>
       </section>
-      <section>
+      <section class="footer-info">
         <ul>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Support</li>
-          <li>Teams of Use</li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">Supprt</a>
+          </li>
+          <li>
+            <a href="">Terms of Use</a>
+          </li>
         </ul>
       </section>
     </footer>
     <!-- 푸터 끝 -->
+    <!-- 모달 -->
+    <div class="modal">
+      <div class="modal-content">
+        <img src="./img/main_icon.png" alt="" />
+        <h3>Thank you!</h3>
+        <p>Thanks for your subscribe</p>
+        <button class="love-chango">Okay, I love Chango!</button>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>
