@@ -287,7 +287,7 @@
   border-radius: 60px;
   background-image: url(../svg/email.svg);
   background-repeat: no-repeat;
-  background-position: 20px 12px;
+  background-position: 20px 11px;
   border: none;
   width: 262px;
   height: 40px;
@@ -568,7 +568,7 @@
   .email-form > input {
     width: 530px;
     height: 60px;
-    background-position: 20px 17px;
+    background-position: 20px 22px;
   }
 
   .email-form > button {
