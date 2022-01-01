@@ -12,6 +12,7 @@
     <!-- 헤더 시작 -->
     <header class="header">
       <h1>
+        <p class="sr_only">Chango</p>
         <img src="./img/logo_chango.png" alt="" />
       </h1>
       <button type="button" class="menu-btn">
@@ -41,11 +42,11 @@
     <main class="main">
       <h2 class="sr_only"></h2>
       <section class="main-header">
-        <h2>Welcome to Chango Posts</h2>
         <div class="main-header-info">
+          <h2>Welcome to Chango Posts</h2>
           <p>
             We provides information like basic things, instagram and youtube
-            address, how to support Chango and how to get some Chango goods
+            <br />address,how to support Chango and how to get some Chango goods
           </p>
           <a href="./img/logo_chango.png" download>Download</a>
         </div>
@@ -54,12 +55,14 @@
       <section class="main-posts">
         <article class="rep-post">
           <img src="./img/lotteryInTexas.JPEG" alt="" />
-          <h3>Chango in Texas</h3>
-          <p>
-            I bought a lottery for fun. Surprisingly, I won the lottery . So,
-            I'm going to t he mart by bus wearing the pancho that my Mexican
-            friend gave me.
-          </p>
+          <div class="rep-post-info">
+            <h3>Chango in Texas</h3>
+            <p>
+              I bought a lottery for fun. Surprisingly, I won the lottery . So,
+              I'm going to t he mart by bus wearing the pancho that my Mexican
+              friend gave me.
+            </p>
+          </div>
         </article>
         <article class="sub-post">
           <h3>Chango in Army</h3>
@@ -76,19 +79,20 @@
             <img src="./img/lastMeal.JPEG" alt="" />
           </div>
           <p>
-            First picture is when we get the winter training <br />There was
-            super cold but we did it<br />
-            Second picture is when we cleaned up the snow <br />
-            We describe it as trash falling from the sky.<br />
-            And Last picture is when I had my last meal<br />with my members as
-            a platoon leader.
+            First picture is when we get the winter training. There was super
+            cold but we did it Second picture is when we cleaned up the snow We
+            describe it as trash falling from the sky. And Last picture is when
+            I had my last meal with my members as a platoon leader.
           </p>
           <a href="#none">Learn More</a>
         </article>
       </section>
       <section class="last-posts">
         <article class="subs">
-          <h3>Subscribe to our Blog post</h3>
+          <h3>
+            Subscribe to our <br />
+            Blog post
+          </h3>
           <p>
             Thanks to visit my site if you want to get information about my new
             posts, enter your e-mail address and subscribe, then you'll get it.
@@ -157,9 +161,14 @@
     <!-- 모달 -->
     <div class="modal">
       <div class="modal-content">
-        <img src="./img/main_icon.png" alt="" />
-        <h3>Thank you!</h3>
-        <p>Thanks for your subscribe</p>
+        <div class="modal-content-top">
+          <img src="./img/main_icon.png" alt="" />
+          <h3>Thank you!</h3>
+          <p>
+            Thanks for your subscribe <br />
+            I love you!
+          </p>
+        </div>
         <button class="love-chango">Okay, I love Chango!</button>
       </div>
     </div>
