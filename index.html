@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <title>Chango</title>
   </head>
   <body>
@@ -15,19 +20,9 @@
         <p class="sr_only">Chango</p>
         <img src="./img/logo_chango.png" alt="" />
       </h1>
-      <button type="button" class="menu-btn">
-        <object
-          data="./svg/menu.svg"
-          type="image/svg+xml"
-          aria-label="menu"
-        ></object>
-      </button>
+      <button type="button" class="menu-btn"></button>
       <nav class="header-nav">
-        <object
-          data="./svg/arrow.svg"
-          type="image/svg+xml"
-          aria-label="go back"
-        ></object>
+        <button type="button" class="header-nav-back"></button>
         <ul class="header-nav-ul">
           <li>Home</li>
           <li>About</li>
@@ -38,6 +33,18 @@
         </ul>
       </nav>
     </header>
+    <!-- 메뉴 모달 창-->
+    <div class="menu-modal">
+      <div class="menu-contents">
+        <button type="button" class="go-back"></button>
+        <ul class="menu-list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Support</li>
+          <li><a href="#none">Download</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- 헤더 끝 -->
     <!-- 메인 시작 -->
 
@@ -114,7 +121,9 @@
         <article class="last-img">
           <img src="./img/4changosoldier.JPG" alt="" />
         </article>
+        <!-- 맨 위로 버튼-->
       </section>
+      <a href="#" class="to-top"></a>
     </main>
     <!-- 메인 끝 -->
     <!-- 푸터 시작 -->

@@ -15,11 +15,15 @@
 
 /* 모바일 퍼스트 */
 .header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
   padding-top: 26.31px;
   background-color: #f2e9d8;
+  width: 100vw;
+  z-index: 20;
 }
 
 .header > h1 > img {
@@ -28,23 +32,83 @@
 }
 
 .menu-btn {
+  cursor: pointer;
   background-color: inherit;
   border: none;
-}
-
-.menu-btn > object {
+  width: 32px;
+  height: 32px;
+  background-image: url(../svg/menu.svg);
+  background-repeat: no-repeat;
 }
 
 .header-nav {
   display: none;
 }
 
-/* 메인 시작 */
-
-.main {
+.menu-modal {
+  display: none;
 }
 
+.menu-modal.show {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: inherit;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+}
+
+.menu-contents {
+  position: absolute;
+  background-color: var(--dark_color);
+  width: 289px;
+  height: 100vh;
+}
+
+.go-back {
+  width: 32px;
+  height: 32px;
+  background-image: url("../svg/arrow.svg");
+  border: none;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-top: 22px;
+  cursor: pointer;
+  margin-bottom: 66px;
+}
+
+.menu-list {
+  padding-left: 50px;
+}
+
+.menu-list > li {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.03px;
+  color: white;
+}
+
+.menu-list > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 119px;
+  height: 40px;
+  background-color: var(--btn_color);
+  border-radius: 40px;
+}
+
+/* 메인 시작 */
+
 .main-header {
+  margin-top: 68px;
   padding: 0px 32px;
   background-color: #f2e9d8;
   display: flex;
@@ -389,6 +453,10 @@
   border: none;
 }
 
+.to-top {
+  display: none;
+}
+
 @media screen and (min-width: 1240px) {
   .header {
     padding: 0px 320px;
@@ -407,7 +475,7 @@
     display: flex;
   }
 
-  .header-nav > object {
+  .header-nav > button {
     display: none;
   }
 
@@ -439,6 +507,7 @@
   }
 
   .main-header {
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     padding-top: 32px;
@@ -512,7 +581,7 @@
 
   .last-posts {
     position: relative;
-    padding-bottom: 600px;
+    padding-bottom: 450px;
     margin-bottom: 0px;
   }
 
@@ -525,6 +594,7 @@
     left: 0px;
     top: 100px;
     overflow: hidden;
+    margin-bottom: 0px;
   }
 
   .footer {
@@ -559,5 +629,28 @@
 
   .footer-link > ul > li {
     margin-right: 20px;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .to-top {
+    display: none;
+  }
+
+  .to-top.show {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../svg/totop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: inherit;
+    position: sticky;
+    cursor: pointer;
+    left: calc(100vw - 100px);
+    bottom: 50px;
   }
 }
