@@ -19,8 +19,10 @@
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0px 20px;
   padding-top: 26.31px;
+  padding: 24px;
   background-color: #f2e9d8;
   width: 100vw;
   z-index: 20;
@@ -461,6 +463,7 @@
   .header {
     padding: 0px 320px;
     padding-top: 31px;
+    padding-bottom: 24px;
   }
   .header > h1 > img {
     width: 140px;
@@ -507,11 +510,12 @@
   }
 
   .main-header {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     padding-top: 32px;
     padding: 0px 320px;
+    padding-top: 10px;
   }
 
   .main-posts {
